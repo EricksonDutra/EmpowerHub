@@ -4,5 +4,42 @@
     box-sizing: border-box;
 }
 
-body{
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #C7A672;
+}
+
+nav{
+    display: flex;
+    align-self: center;
+}
+
+nav li {
+    list-style: none;
+    padding: 20px;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.usuario {
+    align-self: center;
+}
+
+.usuario a{
+    color: #fff;
+    text-decoration: none;
+
+}
+
+button.login {
+    background-color: aquamarine;
+    margin-left: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
 }
