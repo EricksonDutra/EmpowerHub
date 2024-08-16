@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<link rel="stylesheet" href="styles.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pequenos Negócios</title>
+    <link rel="stylesheet" href="./assets/css/forms.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro de Negócios</h1>
+            <form id="cadastro-form">
+                <label for="nome-proprietario" class="required">Nome do Proprietário:</label>
+                <input type="text" id="nome-proprietario" name="nome-proprietario" required><br><br>
+        
+                <label for="email" class="required">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+        
+                <label for="telefone" class="required">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required><br><br>
+        
+                <label for="nome-negocio" class="required">Nome do Negócio:</label>
+                <input type="text" id="nome-negocio" name="nome-negocio" required><br><br>
+        
+                <label for="endereco" class="required">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required><br><br>
+        
+                <label for="categoria" class="required">Categoria do Negócio:</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="servicos">Serviços</option>
+                    <option value="comercios">Comércios</option>
+                    <option value="industria">Indústria</option>
+                </select><br><br>
+        
+                <label for="website">Website (Opcional):</label>
+                <input type="url" id="website" name="website"><br><br>
+        
+                <label for="descricao" class="required">Descrição do Negócio:</label>
+                <textarea id="descricao" name="descricao" rows="4" cols="50" required></textarea><br><br>
+        
+                <button type="submit">Cadastrar</button>
+        
+        </form>
+    </div>
+</body>
+</html>
