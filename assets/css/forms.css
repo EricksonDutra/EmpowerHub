@@ -1,14 +1,22 @@
 /* Estilos básicos para o formulário */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #D04DCB;
+    background-color: #81039B;
     margin: 0;
     padding: 20px;
 }
 
-h1 {
+h1,h2{
     text-align: center;
-    color: #333;
+    color: #fff;
 }
 
 form {

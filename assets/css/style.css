@@ -8,12 +8,22 @@
 header {
     display: flex;
     justify-content: space-around;
-    background-color: #C7A672;
+    background-color: #000;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-image: url('../images/mascara.png');
+}
+
+.center{
+    width: 1280px;
+    margin: 0 auto;
 }
 
 nav{
+    margin-top: 30px;
     display: flex;
     align-self: center;
+    margin-left: 320px;
 }
 
 nav li {
@@ -24,6 +34,8 @@ nav li {
 nav li a {
     color: #fff;
     text-decoration: none;
+    font-size: 20px;
+
 }
 
 .usuario {
@@ -33,13 +45,59 @@ nav li a {
 .usuario a{
     color: #fff;
     text-decoration: none;
+}
 
+.logo{
+    position: absolute;
+    top: 20px;
+    left: 80px;
+}
+
+.logo img{
+    width: 20em;
 }
 
 button.login {
-    background-color: aquamarine;
+    background-color: #E04F12;
     margin-left: 20px;
+    width: 120px;
     padding: 10px;
     border: none;
     border-radius: 10px;
+}
+
+.page1{
+    background-color: #81039B;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-position: 0% 75%;
+    background-image: url('../images/mascara-1.png');
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.page1 img{
+    margin-top: 40px;
+}
+
+.page1 h1,h2, h3, h4, h5, h6{
+    padding-top: 40px;
+    line-height: 1.5em
+}
+
+.content{
+    margin: 0 20px 0 80px;
+    color: #fff;
+}
+
+.parceiras{
+    margin: 20vh ;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+    height: 20vh;
+    background-color: #b238ca5b;
 }
