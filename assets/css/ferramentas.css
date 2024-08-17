@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    background-color: #000000;
+}
+
+.header {
+    background-color: #00213c;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.breadcrumb {
+    color: #00E7FF;
+    padding: 20px;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.content {
+    width: 60%;
+    font-size: 1.25em; /* Aumentado */
+}
+
+.content h1 {
+    font-size: 2.5em; /* Aumentado */
+    margin: 0;
+}
+
+.details {
+    margin-top: 10px;
+    color: #888;
+    font-size: 1em; /* Ajuste para combinar com o novo tamanho da fonte */
+}
+
+aside {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+aside img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #001e30;
+    padding: 10px 20px;
+    text-align: center;
+    color: #888;
+    font-size: 0.9em;
+}
+
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dcdada; /* Cor de fundo da página */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #080808; /* Cor de fundo do container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+main {
+    padding: 20px;
+}
+
+.tool-list {
+    list-style-type: decimal; /* Lista numerada */
+    padding: 0;
+    margin: 0;
+}
+
+.tool-item {
+    background: #fafafa;
+    border-bottom: 1px solid #cf0a0a;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.tool-item h2 {
+    margin-top: 0;
+}
+
+.tool-item p {
+    margin: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #fff;
+    background: #E04F12; /* Cor do botão Ver Mais */
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn:hover {
+    background: #c04310; /* Cor do botão ao passar o mouse */
+}
