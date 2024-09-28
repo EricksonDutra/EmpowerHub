@@ -102,6 +102,10 @@ footer{
     background-color: #b238ca5b;
 }
 
+.logFot {
+    margin-left: 80px;
+}
+
 
 /* Incluindo o estilo do chatbot aqui */
 .chat-container {
@@ -151,3 +155,4 @@ footer{
     padding: 5px 10px;
     margin-left: 5px;
 }
+
