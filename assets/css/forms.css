@@ -1,6 +1,6 @@
 /* Estilos básicos para o formulário */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,7 +14,7 @@ body {
     padding: 20px;
 }
 
-h1,h2{
+h1, h2 {
     text-align: center;
     color: #fff;
 }
@@ -71,5 +71,69 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #0AA210;
+    background-color: #0aa20fc4;
 }
+
+button[type="back"] {
+    background-color: #c90a0a;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="back"]:hover {
+    background-color: #c90a0ac4;
+}
+
+.back{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+label {
+    margin-bottom: .2rem;
+    position: relative;
+}
+
+label:not(:first-of-type) {
+    margin-top: 1rem;
+}
+
+.helper-text {
+    display: none;
+    font-size: .8rem;
+    color: darkred;
+}
+
+.required-popup::after {
+    content: "*Campo obrigatório";
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #DFDFDF;
+    font-size: .65rem;
+    padding: .2rem .3rem;
+    width: auto;
+    display: block;
+    background-color: #202020;
+  }
+
+  input.error {
+    border: solid 2px #992020;
+    background-color: #CCBBBB;
+    color: #662020;
+  }
+  
+  input.correct {
+    background-color: #BBCCBB;
+    border: solid 2px #206620;
+    color: #206620;
+  }
+  
+  .visible {
+    display: block;
+  }

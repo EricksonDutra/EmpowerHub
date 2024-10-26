@@ -1,0 +1,91 @@
+/* Reseta margens e padding padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Define o plano de fundo da página */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f3f3;
+}
+
+/* Estiliza o contêiner do formulário de login */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Título do formulário */
+.login-form h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+/* Rótulos e campos de entrada */
+.login-form label {
+    font-weight: 600;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Botão de login */
+.login-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #E04F12;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+    background-color: #fd9b79;
+}
+
+/* Opções adicionais */
+.extra-options {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.extra-options a {
+    font-size: 0.9rem;
+    color: #E04F12;
+    text-decoration: none;
+}
+
+.extra-options a:hover {
+    text-decoration: underline;
+}
+
+.logo img {
+    width: 18em;
+}
