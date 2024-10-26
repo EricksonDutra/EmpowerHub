@@ -7,46 +7,25 @@
 
 
 header {
-    display: flex;
-    justify-content: space-around;
     background-color: #000;
     height: 120px;
-    background-repeat: no-repeat;
     background-image: url('../images/mascara.png');
+    background-repeat: no-repeat;
+}
+
+span{
+    color: #fd9b79;
+}
+
+section:not(:first-of-type){
+    margin: 80px 0;
 }
 
 .center{
     width: 1280px;
     margin: 0 auto;
+    margin-bottom: 40px;
     text-align: center;
-}
-
-nav{
-    margin-top: 30px;
-    display: flex;
-    align-self: center;
-    margin-left: 320px;
-}
-
-nav li {
-    list-style: none;
-    padding: 20px;
-}
-
-nav li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-
-}
-
-.usuario {
-    align-self: center;
-}
-
-.usuario a{
-    color: #fff;
-    text-decoration: none;
 }
 
 .logo{
@@ -59,6 +38,35 @@ nav li a {
     width: 20em;
 }
 
+nav{
+    margin-top: 30px;
+    display: flex;
+    align-self: center;
+    margin-left: 320px;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 30px;
+}
+
+.nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.usuario a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.usuario a:hover {
+    color: blue;
+    transition:  0.5s;
+}
+
 button.login {
     background-color: #E04F12;
     margin-left: 20px;
@@ -67,6 +75,11 @@ button.login {
     border: none;
     border-radius: 10px;
     font-weight: 700;
+}
+
+button.login:hover {
+    background-color: #e05012c0;
+    transition:  0.5s;
 }
 
 .page1{
@@ -100,15 +113,6 @@ button.login {
     margin: 20vh ;
     display: flex;
     justify-content: space-between;
-}
-
-footer{
-    height: 40vh;
-    background-color: #b238ca5b;
-}
-
-.logFot {
-    margin-left: 80px;
 }
 
 
@@ -193,13 +197,22 @@ footer{
 
 .container_ferramentas{
     display: flex;
-    width: 100vh;
-
     flex-direction: row;
-    justify-content: center;
+    justify-self: center;
+    align-self: flex-end;   
 }
 
-.container_ferramentas .row{
-    flex-wrap: nowrap;
-    width: 8em;
+
+.container_ferramentas  a{  
+    margin: 0 40px;
+}
+
+footer{
+    width: 100vw;
+    height: 40vh;
+    background-color: #b238ca5b;
+}
+
+.logFot {
+    margin: 0 180px;
 }
