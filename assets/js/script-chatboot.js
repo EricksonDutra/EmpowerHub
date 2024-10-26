@@ -40,3 +40,20 @@ function getBotResponse(message) {
         return 'Desculpe, não entendi. Pode tentar perguntar de outra forma?';
     }
 }
+
+function toggleChat() {
+    const chatContainer = document.getElementById('chat-container');
+    const openChatBtn = document.querySelector('.open-chat-btn');
+
+    if (chatContainer.classList.contains('minimized')) {
+        // Expandir o chat
+        chatContainer.classList.remove('minimized');
+        chatContainer.classList.add('show');
+        openChatBtn.style.display = 'none';
+    } else {
+        // Minimizar o chat
+        chatContainer.classList.add('minimized');
+        chatContainer.classList.remove('show');
+        openChatBtn.style.display = 'block';
+    }
+}

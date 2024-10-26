@@ -5,6 +5,10 @@
     font-family: 'Lato';
 }
 
+body, html {
+    overflow-x: hidden; 
+}
+
 
 header {
     background-color: #000;
@@ -64,7 +68,6 @@ nav ul li {
     font-size: 20px;
 }
 
-
 .usuario a{
     color: #fff;
     text-decoration: none;
@@ -109,7 +112,6 @@ button.login:hover {
     padding-top: 40px;
     line-height: 1.5em;
     font-weight: 900;
-
 }
 
 .content{
@@ -118,61 +120,15 @@ button.login:hover {
 }
 
 .parceiras{
-    margin: 20vh ;
+    margin: 0 200vh;
     display: flex;
     justify-content: space-between;
 }
 
-
-/* Incluindo o estilo do chatbot aqui */
-.chat-container {
-    width: 300px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
+.parcerias img{
+    padding: 0 60px;
+    margin-bottom: 40px;
 }
-
-.chat-box {
-    height: 150px;
-    overflow-y: scroll;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 10px;
-    padding: 10px;
-}
-
-.chat-message {
-    margin: 5px 0;
-}
-
-.user-message {
-    text-align: right;
-    color: blue;
-}
-
-.bot-message {
-    text-align: left;
-    color: green;
-}
-
-.chat-container input[type="text"] {
-    width: calc(100% - 50px);
-    padding: 5px;
-}
-
-.chat-container button {
-    padding: 5px 10px;
-    margin-left: 5px;
-}
-
 
 .container-comunidade {
     display: flex;
@@ -180,7 +136,7 @@ button.login:hover {
     padding: 20px;
 }
 
- .row {
+.row {
     display: flex;
 }
 
@@ -212,15 +168,160 @@ button.login:hover {
 
 
 .container_ferramentas  a{  
-    margin: 0 40px;
+    margin: 0 45px;
+}
+
+.container_ferramentas.parcerias{
+    margin-left: 100px;
 }
 
 footer{
     width: 100vw;
-    height: 40vh;
     background-color: #b238ca5b;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.logFot {
-    margin: 0 180px;
+
+@media (max-width: 768px) {
+    .nav ul li {
+        padding: 10px;
+    }
+
+    .usuario a, button.login {
+        font-size: 0.9em;
+    }
+
+    .container_ferramentas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .parcerias img {
+        padding: 0 20px;
+    }
+
+    /* Responsividade para imagens de comunidade */
+    .img_comunidade {
+        max-width: 90%;
+        margin: 10px auto;
+    }
 }
+
+
+
+
+
+
+/* Estilos para o contêiner do chat */
+.chat-section {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+/* Botão para abrir o chat */
+.open-chat-btn {
+    background-color: #81039B;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Minimizar e maximizar o chat */
+/* Botão para abrir o chat */
+.open-chat-btn {
+    background-color: #81039B;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    color: #949494;
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1001;
+}
+
+/* Estilo do contêiner do chat */
+.chat-container {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.minimized {
+    display: none; /* Oculta o chat quando minimizado */
+}
+
+/* Cabeçalho do chat e botão minimizar */
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    color: #81039B;
+}
+
+#minimize-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #81039B;
+}
+
+/* Incluindo o estilo do chatbot aqui */
+
+
+.chat-box {
+    height: 150px;
+    overflow-y: scroll;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.chat-message {
+    margin: 5px 0;
+}
+
+.user-message {
+    text-align: right;
+    color: #81039B;
+}
+
+.bot-message {
+    text-align: left;
+    color: #E04F12;
+}
+
+
+.chat-container button {
+    padding: 5px 10px;
+    margin-left: 5px;
+}
+
+
