@@ -37,7 +37,8 @@
 
     <nav>
       <ul class="nav">
-        <li class="nav-item"><a class="nav-link" href="./sobre.html">Sobre <img src="./assets/images/seta.png" alt="seta"></a></li>
+        <li class="nav-item"><a class="nav-link" href="./sobre.html">Sobre <img src="./assets/images/seta.png"
+              alt="seta"></a></li>
         <li class="nav-item"><a class="nav-link" href="./ferramentas.html">Soluções <img src="./assets/images/seta.png"
               alt="seta"></a></li>
         <li class="nav-item"><a class="nav-link" href="./contatos.html">Contatos</a></li>
@@ -67,11 +68,10 @@
       <div class="center">
         <h2>Veja as empresas parceiras da EmpowerHub</h2>
       </div>
-      <div class="container marketing">
-
-        <div class="center">
-          <img src="./assets/images/parcerias.png" alt="Empresas parceiras" class="img-fluid">
-        </div>
+      <div class="container_ferramentas parcerias">
+       <a href="https://sebrae.com.br/sites/PortalSebrae/" target="_blank"> <img src="./assets/images/sebrae.png" alt="Empresas parceiras" class="img-fluid"> </a>
+       <a href="https://revistapegn.globo.com/" target="_blank"><img src="./assets/images/pegn.png" alt="Empresas parceiras" class="img-fluid"> </a>
+       <a href="https://cstempreendedorismo.com.br/quem-somos/" target="_blank"> <img src="./assets/images/cst.png" alt="Empresas parceiras" class="img-fluid"> </a>
       </div>
     </section>
 
@@ -83,25 +83,25 @@
 
       <div class="container marketing">
         <div class="row">
-          <div class="col-lg-4">
-            <img src="./assets/images/planej_neg.png" alt="">
+          <div class="col-lg-4 center">
+            <img src="./assets/images/planej_neg.png" alt="Planejamento de negócios">
 
             <h2 class="fw-normal">Planejamento de negócios</h2>
 
             <p>Nosso Plano de Negócios é um documento escrito que descreve as principais atividades de negócios de uma
               empresa.</p>
             <p><a class="btn btn-secondary" href="#">Detalhes »</a></p>
-          </div><!-- /.col-lg-4 -->
+          </div>
 
-          <div class="col-lg-4">
-            <img src="./assets/images/financial_financ.png" alt="">
+          <div class="col-lg-4 center">
+            <img src="./assets/images/financial_financ.png" alt="Planejamento de negócios">
             <h2 class="fw-normal">Planejamento Financeiro</h2>
             <p>Nossa equipe de especialistas toma decisões sensatas sobre seu dinheiro, para garantir que alcancem seus
               objetivos de vida. Um plano financeiro.</p>
             <p><a class="btn btn-secondary" href="#">Detalhes »</a></p>
           </div><!-- /.col-lg-4 -->
 
-          <div class="col-lg-4">
+          <div class="col-lg-4 center">
             <img src="./assets/images/market_icon.png" alt="">
             <h2 class="fw-normal">Análise de mercado</h2>
             <p>Uma análise de mercado é uma avaliação quantitativa e qualitativa de um mercado. Ele olha para o tamanho
@@ -154,7 +154,8 @@
         <a href="https://www.calculadoraonline.com.br/financeira">
           <img src="./assets/images/calc.png" alt="">
         </a>
-        <a href="https://matrizswot.com.br/?utm_source=ADS&utm_medium&utm_campaign=SWOT_Otimizada&utm_content&utm_term=matriz%20swot%20online&gad_source=1&gclid=CjwKCAjwg-24BhB_EiwA1ZOx8m7tLf_zPxGouDTsez3yf4_JZKOm83Gq9XE_Qm-ogCUvGVOGECduJhoCng0QAvD_BwE">
+        <a
+          href="https://matrizswot.com.br/?utm_source=ADS&utm_medium&utm_campaign=SWOT_Otimizada&utm_content&utm_term=matriz%20swot%20online&gad_source=1&gclid=CjwKCAjwg-24BhB_EiwA1ZOx8m7tLf_zPxGouDTsez3yf4_JZKOm83Gq9XE_Qm-ogCUvGVOGECduJhoCng0QAvD_BwE">
           <img src="./assets/images/swot.png" alt="">
         </a>
         <a href="https://www.linkedin.com/">
@@ -202,30 +203,37 @@
     </section>
 
     <!-- Chatbot HTML -->
-    <!-- <section>
-      <div class="chat-container">
+    <section class="chat-section">
+      <div class="chat-container minimized" id="chat-container">
+        <div class="chat-header">
+          <span>Chatbot</span>
+          <button id="minimize-btn" onclick="toggleChat()">−</button>
+        </div>
         <div class="chat-box" id="chat-box">
         </div>
         <input type="text" id="user-input" placeholder="Digite sua mensagem...">
         <button onclick="sendMessage()">Enviar</button>
       </div>
-    </section> -->
+      <button class="open-chat-btn" id="open-chat-btn" onclick="toggleChat()">💬 Chat</button>
+    </section>
+
   </main>
 
 
   <footer class="row row-cols-md-4 py-5 ">
     <div class="logFot">
-      <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-        <img src="./assets/images/logoEmpowerhub.png" alt="">
+      <a href="/" class="">
+        <img src="./assets/images/logoEmpowerhub.png" alt="logo EmpowerHub">
       </a>
-      <p class="text-body-secondary">©empowehub 2024</p>
+      <p class="text-body-secondary">©Empowehub 2024</p>
     </div>
 
     <div class="col mb-3">
       <h5><strong>Quem somos</strong></h5>
       <ul class="nav flex-column">
         <li class="nav-item mb-2"><a href="./sobre.html" class="nav-link p-0 text-body-secondary">Sobre Nós</a></li>
-        <li class="nav-item mb-2"><a href="./contatos.html" class="nav-link p-0 text-body-secondary">Contate-nos</a></li>
+        <li class="nav-item mb-2"><a href="./contatos.html" class="nav-link p-0 text-body-secondary">Contate-nos</a>
+        </li>
         <li class="nav-item mb-2"><a href="#p1" class="nav-link p-0 text-body-secondary">Parcerias</a></li>
         <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-body-secondary">Novidades</a></li>
       </ul>
@@ -235,9 +243,11 @@
       <h5><strong>Ferramentas</strong></h5>
       <ul class="nav flex-column">
         <li class="nav-item mb-2"><a href="#ferramentas_page" class="nav-link p-0 text-body-secondary">Produtos</a></li>
-        <li class="nav-item mb-2"><a href="#ferramentas_page" class="nav-link p-0 text-body-secondary">Calculadoras</a></li>
+        <li class="nav-item mb-2"><a href="#ferramentas_page" class="nav-link p-0 text-body-secondary">Calculadoras</a>
+        </li>
         <li class="nav-item mb-2"><a href="#ferramentas_page" class="nav-link p-0 text-body-secondary">Modelos</a></li>
-        <li class="nav-item mb-2"><a href="#ferramentas_page" class="nav-link p-0 text-body-secondary">Documentos</a></li>
+        <li class="nav-item mb-2"><a href="#ferramentas_page" class="nav-link p-0 text-body-secondary">Documentos</a>
+        </li>
       </ul>
     </div>
   </footer>
