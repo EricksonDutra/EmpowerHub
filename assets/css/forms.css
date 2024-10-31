@@ -14,7 +14,8 @@ body {
     padding: 20px;
 }
 
-h1, h2 {
+h1,
+h2 {
     text-align: center;
     color: #fff;
 }
@@ -46,11 +47,12 @@ input[type="text"],
 input[type="email"],
 input[type="tel"],
 input[type="url"],
+input[type="password"],
 textarea,
 select {
     width: 100%;
     padding: 10px;
-    margin-bottom: 12px;
+    /* margin-bottom: 12px; */
     border: 1px solid #847d7d;
     border-radius: 4px;
     box-sizing: border-box;
@@ -88,7 +90,7 @@ button[type="back"]:hover {
     background-color: #c90a0ac4;
 }
 
-.back{
+.back {
     color: #fff;
     text-decoration: none;
 }
@@ -120,20 +122,24 @@ label:not(:first-of-type) {
     width: auto;
     display: block;
     background-color: #202020;
-  }
+}
 
-  input.error {
+input.error {
     border: solid 2px #992020;
     background-color: #CCBBBB;
     color: #662020;
-  }
-  
-  input.correct {
+}
+
+input.correct {
     background-color: #BBCCBB;
     border: solid 2px #206620;
     color: #206620;
-  }
-  
-  .visible {
+}
+
+.visible {
     display: block;
-  }
+}
+
+.container_empresa {
+    margin: 25px 0;
+}
